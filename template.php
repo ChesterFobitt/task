@@ -54,7 +54,7 @@
 
                     <div class="action__item">
                         <img src="<?=$images_urls[$actions[$key]['id']]?>" 
-                             data-id="<?=$actions[$key]['id'] + 1?>" 
+                             data-id="<?=$actions[$key]['id']?>" 
                              data-points="<?=$actions[$key]['points']?>" 
                              data-counter="<?=$actions[$key]['recovery_time']?>" 
                              class="action__btn">
