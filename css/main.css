@@ -499,7 +499,7 @@ body {
   position: relative;
 }
 
-.actions__controls .action__item .counter {
+.actions__controls .action__item .counter__time {
   display: none;
   position: absolute;
   width: 100%;
@@ -511,7 +511,7 @@ body {
   text-shadow: 1px 1px #333;
 }
 
-.actions__controls .action__item .counter.active {
+.actions__controls .action__item .counter__time.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

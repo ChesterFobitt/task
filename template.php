@@ -60,7 +60,7 @@
                              data-points="<?=$actions[$key]['points']?>" 
                              data-counter="<?=$actions[$key]['recovery_time']?>" 
                              class="action__btn">
-                        <div class="counter"></div>
+                        <div class="counter__time"></div>
                     </div>
 
                 <?php endforeach;?>
