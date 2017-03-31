@@ -27,7 +27,7 @@ var Action = (function (){
             
             if (typeof classes === 'object'){
 
-                for (var i = 0, len = classes.length; i < len; i++) {
+                for (var i = 0; i < classes.length; i++) {
                     (function(i){
                         elem.classList.toggle(classes[i]);
                     })(i);
