@@ -44,7 +44,9 @@
             <div class="actions__counter">
                 <div class="star__counter">
                     <div class="star"></div>
-                    <div class="counter"> <span><?=$current_points?></span>
+                    <div class="counter"> 
+                        <span class="counter__text"><?=$current_points?>
+                    </span>
                     </div>
                 </div>
             </div>
@@ -66,7 +68,9 @@
             </div>
         </div>
 
-        <script src="./js/main.js"></script>
+        <script src="./js/Counter.js"></script>
+        <script src="./js/Action.js"></script>
+        <script src="./js/App.js"></script>
     </body>
 
 </html>
