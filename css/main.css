@@ -531,16 +531,16 @@ body {
           transform: scale(1);
 }
 
-.actions__controls .action__btn:not(.disabled) {
+.actions__controls .action__item:not(.disabled) {
   cursor: pointer;
 }
 
-.actions__controls .action__btn:not(.disabled):hover {
+.actions__controls .action__item:not(.disabled):hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.actions__controls .action__btn.disabled {
+.actions__controls .action__item.disabled {
   opacity: .5;
 }
 

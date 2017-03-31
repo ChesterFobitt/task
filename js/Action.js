@@ -11,7 +11,6 @@ var Action = (function (){
 
                     (function(j){
                         actions[j]
-                            .firstElementChild
                             .addEventListener('click', function(){
                                 self.setActionId(this);
                             });
@@ -25,7 +24,7 @@ var Action = (function (){
         setClass: function(classes, elem){
             var self = this;
             
-            if (typeof classes === 'object'){
+            if (classes.length){
 
                 for (var i = 0; i < classes.length; i++) {
                     (function(i){
@@ -33,8 +32,6 @@ var Action = (function (){
                     })(i);
                 }
 
-            } else {
-                elem.classList.toggle(classes);
             }
         },
         
@@ -48,6 +45,8 @@ var Action = (function (){
         },
 
         setActionId: function(elem){
+            if (elem.classList.contains('disabled')) return;
+            
             var self = this,
                 req    = new XMLHttpRequest(),
                 id     = elem.getAttribute('data-id'),

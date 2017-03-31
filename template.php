@@ -54,13 +54,14 @@
 
                 <?php foreach ($actions as $key=>$val):?>
 
-                    <div class="action__item">
-                        <img src="<?=$images_urls[$actions[$key]['id']]?>" 
-                             data-id="<?=$actions[$key]['id']?>" 
-                             data-points="<?=$actions[$key]['points']?>" 
-                             data-counter="<?=$actions[$key]['recovery_time']?>" 
+                    <div class="action__item"
+                         data-id="<?=$actions[$key]['id']?>" 
+                         data-points="<?=$actions[$key]['points']?>" 
+                         data-counter="<?=$actions[$key]['recovery_time']?>">
+                        <img src="<?=$images_urls[$actions[$key]['id']]?>"  
                              class="action__btn">
-                        <div class="counter__time"></div>
+                        <div class="counter__time"
+                             data-counter="<?=$actions[$key]['id']?>"></div>
                     </div>
 
                 <?php endforeach;?>

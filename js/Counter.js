@@ -6,7 +6,9 @@ var Counter = (function(){
         },
         start: function(startTime, action) {
             var self = this,
-                counter = action.nextElementSibling,
+                id      = action.getAttribute('data-id'),
+                counter = document.querySelector('[data-counter="' + id + '"]'),
+                //counter = document.querySelector('.counter__time'),
                 time    = startTime,
                 minutes = parseInt(time / 60),
                 seconds = time,
